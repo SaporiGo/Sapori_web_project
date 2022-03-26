@@ -7,9 +7,181 @@
     <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <title>Home</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="../../dist/bundle.js" type="module"></script>
 </head>
+
+
 <body>
-  <div class="container"></div>
+  <div class="main-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="nav navbar-nav navbar-left">
+          <a class="navbar-brand" href="#">
+            <img alt="logo" src="https://static.wixstatic.com/media/6c7db4_3e3d73653fb6450b899e87116c857b92~mv2.png">
+            <div>Sapori</div>
+          </a>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" id="deli-li">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Deli<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Deli01</a></li>
+                <li><a href="#">Deli02</a></li>
+                <li><a href="#">Deli03</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pizza & Wings<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Wings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Story<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Our Story01</a></li>
+                <li><a href="#">Our Story02</a></li>
+                <li><a href="#">Our Story03</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <button class="btn btn-default" id="orderBtn">
+                  Order Now
+                </button>
+              </a>
+            </li>
+           </ul>
+           <form class="navbar-form navbar-right" id="searchBar" style="margin-top: 8px !important;">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="More menu..." style="width: 150px;">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="contanier-fluid">
+        <div class="text-box col-lg-6 col-md-12 col-sm-12">
+          <h1>Welcome to Sapori</h1>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum cursus fermentum, justo, tellus ornare odio. Sollicitudin nibh cursus diam fringilla pellentesque cum. Nascetur facilisis semper mi diam dignissim eu tincidunt.
+          </div>
+        </div>
+        <div class="image-box col-lg-6 col-md-12 col-sm-12">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="../../assets/images/coffee.png" alt="">
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <img src="../../assets/images/deli.png" alt="">
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <img src="../../assets/images/pizza.png" alt="">
+                <div class="carousel-caption"></div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="row business-hours">
+              <div class="title">
+                <div class="glyphicon glyphicon-time"></div>
+                Hours
+              </div>
+              <div class="col-lg-6 col-md-6 col-xs-6">
+                <ul>
+                  <li>Sunday: </li>
+                  <li>Monday: </li>
+                  <li>Tuesday - Friday: </li>
+                  <li>Saturday: </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-xs-6">
+                <ul>
+                  <li>12pm - 9pm</li>
+                  <li>8am - 4pm</li>
+                  <li>8am - 9pm</li>
+                  <li>9am - 9pm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="contact-info">
+              <ul>
+                <li class="address">
+                  <div class="glyphicon glyphicon-map-marker"></div>
+                  <a href="#">
+                    Sapori Di Pizza Dublin</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;66B Pearse St, Dublin 2, D02 DE68
+                  </a>
+                </li>
+                <li class="phone">
+                  <div class="glyphicon glyphicon-earphone"></div>
+                  <a href="#">+35316588760</a>
+                </li>
+                <li class="socialMedia">
+                  <a href="#">
+                    <svg fill="#FFFCF6" t="1648318421466" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1359" width="20" height="20">
+                      <path fill="#FFFCF6" d="M967.51 0H56.49C25.302 0 0 25.301 0 56.49v911.02C0 998.74 25.301 1024 56.49 1024h490.411V627.456H413.397V472.96h133.504V358.827c0-132.224 80.811-204.16 198.784-204.16 56.534 0 105.131 4.138 119.296 6.016v138.24H783.02c-64 0-76.459 30.762-76.459 75.562v98.603h152.917l-19.84 154.88H706.56V1024h260.907c31.274 0 56.533-25.259 56.533-56.49V56.49C1024 25.302 998.741 0 967.51 0" p-id="1360"></path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg fill="#FFFCF6" t="1648319006355" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2360" width="25" height="25" style="color: #FFFCF6">
+                      <path fill="#FFFCF6" d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9z m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zM725.5 250.7c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9c-0.1-26.6-21.4-47.9-47.9-47.9z" p-id="2361"></path><path d="M911.8 512c0-55.2 0.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-0.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-0.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9 0.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165z m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" p-id="2362"></path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg fill="#FFFCF6" t="1648319203413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7092" width="20" height="20" style="color: #FFFCF6">
+                      <path fill="#FFFCF6" d="M477.696 791.04c-14.336 0-25.6-11.264-25.6-25.6v-130.048c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v130.048c0 14.336-11.264 25.6-25.6 25.6zM582.144 1011.712c-14.336 0-25.6-11.264-25.6-25.6v-366.08c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v366.08c0 14.336-11.264 25.6-25.6 25.6zM828.928 1011.712c-14.336 0-25.6-11.264-25.6-25.6v-366.08c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v366.08c0 14.336-11.264 25.6-25.6 25.6zM681.472 791.04c-14.336 0-25.6-11.264-25.6-25.6v-130.048c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v130.048c0 14.336-11.264 25.6-25.6 25.6zM930.304 791.04c-14.336 0-25.6-11.264-25.6-25.6v-130.048c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v130.048c0 14.336-11.264 25.6-25.6 25.6z" p-id="7093"></path><path d="M666.624 788.992H484.352c-14.336 0-25.6-11.264-25.6-25.6s11.264-25.6 25.6-25.6h182.272c14.336 0 25.6 11.264 25.6 25.6s-11.264 25.6-25.6 25.6zM819.712 585.216h-1.024c-37.888 0-73.216-12.288-104.448-36.864-28.16 23.04-67.072 36.864-106.496 36.864-38.4 0-73.216-12.288-104.448-36.864-28.16 23.04-67.072 36.864-106.496 36.864-38.4 0-73.216-12.288-104.448-36.864-28.16 23.04-67.072 36.864-106.496 36.864-94.208 0-167.936-73.216-167.936-165.888v-27.648L107.52 105.472C131.584 42.496 180.736 42.496 209.92 42.496h598.016c30.208 0 81.408 0 105.472 57.344l1.024 2.56L1003.52 403.968v15.36c0 42.496-16.896 82.944-47.616 113.152-34.304 34.304-82.432 52.736-136.192 52.736zM711.68 475.136l19.968 19.968c25.6 25.6 55.296 38.912 87.04 38.912 40.448 0 76.288-13.312 100.864-37.888 20.992-20.992 32.256-48.128 32.256-76.8v-8.192L865.28 118.272c-9.728-22.528-24.576-24.576-57.856-24.576H209.92c-28.16 0-42.496 0-53.76 29.184L69.632 399.36v19.968c0 64.512 51.2 114.688 116.736 114.688 34.304 0 67.072-14.336 85.504-36.864l17.92-22.016 19.968 19.968c25.6 25.6 55.296 38.912 87.04 38.912 34.304 0 67.072-14.336 85.504-36.864l17.92-22.016 19.968 19.968c25.6 25.6 55.296 38.912 87.04 38.912 33.792 0 67.072-14.336 85.504-36.864l18.944-22.016z" p-id="7094"></path><path d="M441.344 978.432H265.728c-91.648 0-165.888-72.192-165.888-160.768v-253.44c0-14.336 11.264-25.6 25.6-25.6s25.6 11.264 25.6 25.6v253.44c0 60.416 51.712 109.568 114.688 109.568h175.616c14.336 0 25.6 11.264 25.6 25.6s-11.776 25.6-25.6 25.6z" p-id="7095"></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
+
 </html>

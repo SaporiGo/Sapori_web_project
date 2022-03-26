@@ -1,14 +1,179 @@
-@media screen and (min-width: 1170px) {
-    .container {
-        width: 1440px;
+.main-container {
+    nav {
+        .container-fluid {
+            padding: 0;
+            width: 82%;
+            .navbar-brand {
+                padding-top: 10px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .navbar-left {
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+                    width: 180px;
+                    img {
+                        display: inline-block;
+                        flex: 1;
+                        height: 72px;
+                    }
+                    div {
+                        flex: 1;
+                        height: 70px;
+                        line-height: 70px;
+                        text-align: center;
+                        font-family: 'Yeseva One';
+                        font-style: normal;
+                        font-weight: 600;
+                        color: #FFFCF6;
+                    }
+                }
+            }
+            .navbar-right {
+                margin-top: 22px;
+                ul {
+                    a {
+                        color: #FFFCF6;
+                    }
+                    .dropdown-menu {
+                        a {
+                            color: #B33B37;
+                        }
+                    }
+                    li:nth-child(4) {
+                        a {
+                            padding-top: 10px;
+                            button {
+                                width: 90px;
+                                height: 27px;
+                                border: 0;
+                                border-radius: 40px;
+                                background-color: rgba(207, 193, 193, 0.5);
+                                color: #FFFCF6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-}
 
-* {
-    padding: 0;
-    margin: 0;
-}
+    .main-content {
+        padding-top: 90px;
+        height: 680px;
+        .text-box {
+            padding: 0;
+            color: #3C2D27;
+            height: 100%;
+            h1 {
+                position: absolute;
+                width: 482px;
+                height: 164px;
+                left: 140px;
+                top: 120px;
+                font-family: 'Yeseva One';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 45px;
+            }
+            .text {
+                position: absolute;
+                width: 482px;
+                height: 164px;
+                left: 140px;
+                top: 200px;
+                width: 60%;
+                height: 200px;
+                margin-top: 37px;
+                font-size: 20px;
+                line-height: 35px;
+                text-align: left;
+            }
+        }
+        .image-box {
+            padding: 0;
+            height: 70%;
+            .carousel-inner {
+                img {
+                    width: 100%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
 
-.container {
-    padding: 0;
+    footer {
+        height: 355px;
+        padding-top: 60px;
+        color: #FFFCF6;
+        font-size: 18px;
+        background-color: #253140;
+        .container-fluid {
+            padding: 0;
+            .col-lg-6 {
+                padding: 0;
+                .business-hours {
+                    width: 450px;
+                    height: 250px;
+                    margin: 0 auto;
+                    text-align: left;
+                    .title {
+                        padding-left: 10px;
+                        font-weight: 800;
+                        div {
+                            margin-right: 5px;
+                            font-size: 25px;
+                        }
+                        div::before {
+                            vertical-align: middle;
+                        }
+                    }
+                    ul {
+                        margin-top: 20px;
+                        padding-left: 50px;
+                        li {
+                            list-style: none;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .contact-info {
+                    width: 450px;
+                    height: 210px;
+                    margin: 0 auto;
+                    text-align: left;
+                    ul {
+                        li {
+                            list-style: none;
+                            margin-bottom: 40px;
+                            a {
+                                margin-left: 15px;
+                                text-decoration: underline;
+                            }
+                        }
+                        li.address, li.phone {
+                            div {
+                                font-size: 25px;
+                            }
+                            div::before {
+                                vertical-align: middle;
+                            }
+                        }
+                        li.socialMedia {
+                            a {
+                                text-decoration: none;
+                            }
+                            a:nth-child(1) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
