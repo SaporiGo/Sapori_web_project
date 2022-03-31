@@ -1,18 +1,13 @@
 .main-container {
     nav {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
         .container-fluid {
             padding: 0;
             width: 82%;
             .navbar-brand {
                 padding-top: 10px;
-                font-size: 28px;
                 img {
                     width: 70px;
                     height: 70px;
-                    margin-right: 10px;
                 }
             }
             .navbar-left {
@@ -53,22 +48,15 @@
                         a {
                             padding-top: 10px;
                             button {
-                                width: 120px;
-                                height: 30px;
-                                line-height: 16px;
+                                width: 90px;
+                                height: 27px;
                                 border: 0;
                                 border-radius: 40px;
                                 background-color: rgba(207, 193, 193, 0.5);
                                 color: #FFFCF6;
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 400;
                             }
                         }
                     }
-                }
-                form {
-                    margin-top: 8px;
                 }
             }
         }
@@ -77,6 +65,10 @@
     .main-content {
         padding-top: 90px;
         height: 680px;
+        .row {
+            padding: 0;
+            margin: 0;
+        }
         .text-box {
             padding: 0;
             color: #3C2D27;
@@ -89,7 +81,7 @@
                 top: 120px;
                 font-family: 'Yeseva One';
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 45px;
             }
             .text {
@@ -103,6 +95,19 @@
                 line-height: 35px;
                 text-align: left;
             }
+            .collection {
+                button {
+                    position: absolute;
+                    left: 140px;
+                    top: 430px;
+                    width: 150px;
+                    height: 30px;
+                    border: 0;
+                    border-radius: 40px;
+                    background-color: #B33B37;
+                    color: #FFFCF6;
+                }
+            }
         }
         .image-box {
             padding: 0;
@@ -115,12 +120,57 @@
         }
     }
 
+    .menu-box {
+        clear: both;
+        padding: 40px 0 0 140px;
+        margin: 0;
+        background-color: #253140;
+        padding-bottom: 80px;
+        h1 {
+            margin-bottom: 40px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 55px;
+            color: #FFFCF6;
+        }
+        .menu {
+            width: 1150px;
+            height: 400px;
+            color: #3C2D27;
+            ul {
+                li {
+                    list-style: none;
+                    .menu-list {
+                        width: 340px;
+                        height: 190px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: #FFFCF6;
+                        text-align: center;
+                        a {
+                            color: #3C2D27;
+                        }
+                        a:nth-child(1) {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
     footer {
         height: 355px;
         padding-top: 80px;
-        color: #FFFCF6;
+        color: #3C2D27;
         font-size: 18px;
-        background-color: #253140;
+        background-color: #FFFCF6;
         .container-fluid {
             padding: 0;
             .col-lg-6 {
@@ -162,6 +212,7 @@
                             a {
                                 margin-left: 15px;
                                 text-decoration: underline;
+                                color: #3C2D27;
                             }
                         }
                         li.address, li.phone {
